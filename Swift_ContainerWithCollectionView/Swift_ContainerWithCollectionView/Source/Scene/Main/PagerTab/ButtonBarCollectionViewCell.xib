@@ -13,14 +13,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ButtonBarCollectionViewCell" id="gTV-IL-0wX" customClass="ButtonBarCollectionViewCell" customModule="Swift_ContainerWithCollectionView" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="100" height="65"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="65"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="100" height="65"/>
+                <rect key="frame" x="0.0" y="0.0" width="200" height="65"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3X9-6H-ekX">
-                        <rect key="frame" x="0.0" y="0.0" width="100" height="65"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="65"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
