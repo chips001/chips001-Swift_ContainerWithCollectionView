@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainContainerViewController: UIViewController {
 
 //    @IBOutlet weak var ButtonBarViewCollectionView: UICollectionView!
     
