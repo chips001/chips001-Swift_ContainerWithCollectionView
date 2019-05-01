@@ -11,8 +11,4 @@ import UIKit
 class ButtonBarCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var viewNameLabel: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
 }

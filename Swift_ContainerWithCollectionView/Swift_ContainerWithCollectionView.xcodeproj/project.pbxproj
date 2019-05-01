@@ -22,13 +22,14 @@
 		644AA0AB226CAEC3008F6BE3 /* ButtonBarPagerTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644AA0AA226CAEC3008F6BE3 /* ButtonBarPagerTabViewController.swift */; };
 		644AA0AD226CAEEE008F6BE3 /* PagerTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644AA0AC226CAEEE008F6BE3 /* PagerTabViewController.swift */; };
 		645479562263617300DAC2FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645479552263617300DAC2FC /* AppDelegate.swift */; };
-		645479582263617300DAC2FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645479572263617300DAC2FC /* ViewController.swift */; };
-		6454795B2263617300DAC2FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645479592263617300DAC2FC /* Main.storyboard */; };
+		645479582263617300DAC2FC /* MainContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645479572263617300DAC2FC /* MainContainerViewController.swift */; };
+		6454795B2263617300DAC2FC /* MainContainerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645479592263617300DAC2FC /* MainContainerViewController.storyboard */; };
 		6454795D2263617600DAC2FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6454795C2263617600DAC2FC /* Assets.xcassets */; };
 		645479602263617600DAC2FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6454795E2263617600DAC2FC /* LaunchScreen.storyboard */; };
 		6454796D2263623E00DAC2FC /* UIViewController+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6454796C2263623E00DAC2FC /* UIViewController+Util.swift */; };
 		645479702263684300DAC2FC /* ButtonBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6454796E2263684300DAC2FC /* ButtonBarCollectionViewCell.swift */; };
 		645479712263684300DAC2FC /* ButtonBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6454796F2263684300DAC2FC /* ButtonBarCollectionViewCell.xib */; };
+		648DCFF222798D510006B53C /* ButtonBarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648DCFF122798D510006B53C /* ButtonBarCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,14 +49,15 @@
 		644AA0AC226CAEEE008F6BE3 /* PagerTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTabViewController.swift; sourceTree = "<group>"; };
 		645479522263617300DAC2FC /* Swift_ContainerWithCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_ContainerWithCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645479552263617300DAC2FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		645479572263617300DAC2FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6454795A2263617300DAC2FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		645479572263617300DAC2FC /* MainContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainerViewController.swift; sourceTree = "<group>"; };
+		6454795A2263617300DAC2FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainContainerViewController.storyboard; sourceTree = "<group>"; };
 		6454795C2263617600DAC2FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6454795F2263617600DAC2FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		645479612263617600DAC2FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6454796C2263623E00DAC2FC /* UIViewController+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Util.swift"; sourceTree = "<group>"; };
 		6454796E2263684300DAC2FC /* ButtonBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBarCollectionViewCell.swift; sourceTree = "<group>"; };
 		6454796F2263684300DAC2FC /* ButtonBarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonBarCollectionViewCell.xib; sourceTree = "<group>"; };
+		648DCFF122798D510006B53C /* ButtonBarCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBarCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +168,10 @@
 			isa = PBXGroup;
 			children = (
 				645479882263D2C800DAC2FC /* PagerTab */,
-				645479572263617300DAC2FC /* ViewController.swift */,
-				645479592263617300DAC2FC /* Main.storyboard */,
+				644AA0AC226CAEEE008F6BE3 /* PagerTabViewController.swift */,
+				644AA0AA226CAEC3008F6BE3 /* ButtonBarPagerTabViewController.swift */,
+				645479572263617300DAC2FC /* MainContainerViewController.swift */,
+				645479592263617300DAC2FC /* MainContainerViewController.storyboard */,
 				644AA0A8226C711E008F6BE3 /* MainPagerTabViewController.swift */,
 				644996B322667EB8006A483D /* MainPagerTabDataSource.swift */,
 			);
@@ -179,8 +183,7 @@
 			children = (
 				644996B5226918D5006A483D /* PagerTabKind.swift */,
 				6439DF8E226CB17400C84EB3 /* PagerTabHelpers.swift */,
-				644AA0AC226CAEEE008F6BE3 /* PagerTabViewController.swift */,
-				644AA0AA226CAEC3008F6BE3 /* ButtonBarPagerTabViewController.swift */,
+				648DCFF122798D510006B53C /* ButtonBarCollectionView.swift */,
 				6454796E2263684300DAC2FC /* ButtonBarCollectionViewCell.swift */,
 				6454796F2263684300DAC2FC /* ButtonBarCollectionViewCell.xib */,
 			);
@@ -252,7 +255,7 @@
 				6454795D2263617600DAC2FC /* Assets.xcassets in Resources */,
 				644AA0A7226C6C07008F6BE3 /* FourthViewController.storyboard in Resources */,
 				644AA0A5226C6BD6008F6BE3 /* ThirdViewController.storyboard in Resources */,
-				6454795B2263617300DAC2FC /* Main.storyboard in Resources */,
+				6454795B2263617300DAC2FC /* MainContainerViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +275,8 @@
 				6454796D2263623E00DAC2FC /* UIViewController+Util.swift in Sources */,
 				644AA0A9226C711E008F6BE3 /* MainPagerTabViewController.swift in Sources */,
 				644AA0AD226CAEEE008F6BE3 /* PagerTabViewController.swift in Sources */,
-				645479582263617300DAC2FC /* ViewController.swift in Sources */,
+				645479582263617300DAC2FC /* MainContainerViewController.swift in Sources */,
+				648DCFF222798D510006B53C /* ButtonBarCollectionView.swift in Sources */,
 				645479562263617300DAC2FC /* AppDelegate.swift in Sources */,
 				644996B422667EB8006A483D /* MainPagerTabDataSource.swift in Sources */,
 				644AA0AB226CAEC3008F6BE3 /* ButtonBarPagerTabViewController.swift in Sources */,
@@ -283,12 +287,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		645479592263617300DAC2FC /* Main.storyboard */ = {
+		645479592263617300DAC2FC /* MainContainerViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6454795A2263617300DAC2FC /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainContainerViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		6454795E2263617600DAC2FC /* LaunchScreen.storyboard */ = {

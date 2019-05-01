@@ -8,23 +8,77 @@
 
 import UIKit
 
-class ButtonBarPagerTabViewController: PagerTabViewController {
+struct ButtonBerPagerTabSettings {
+    
+    var style = Style()
+    
+    struct Style {
+        var buttonBarBackgroundColer: UIColor?
+        var buttonBarMinimumInteritemSpecing: CGFloat?
+        var buttonBarMinimunLineSpecing: CGFloat?
+        var buttonBarLeftContentInset: CGFloat?
+        var buttonBarRightContentInset: CGFloat?
+        
+        var selectedBarHeight: CGFloat = 5
+        var selectedBarBackgroundColor = UIColor.darkGray
+        var selectedBarVerticalAlignment: SelectedBarVerticalAlignment = .bottom
+        var selectedBarAlignment: SelectedBarAlignment = .center
+        var selectedBarRedius: CGFloat = 0
+        var selectedBarZPosition: CGFloat = 999
+        
+        var buttonBarItemBackgroundColor: UIColor?
+        var buttonBarItemFont = UIFont.systemFont(ofSize: 17)
+        var buttonBarItemLeftRightMargin: CGFloat = 8
+        var buttonBarItemTitleColor: UIColor?
+        var buttonBarItemTitleSelectedColor: UIColor?
+        var buttonBarItemsShouldFillAvailableWidth = true
+        var buttonBarHeight: CGFloat?
+    }
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class ButtonBarPagerTabViewController: PagerTabViewController, PagerTabDataSource {
+    
+    @IBOutlet weak var buttonBarCollectionView: ButtonBarCollectionView!
+    var settings = ButtonBerPagerTabSettings()
+    
+    override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.delegate = self
+        self.datasource = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.delegate = self
+        self.datasource = self
     }
-    */
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+}
 
+extension ButtonBarPagerTabViewController: PagerTabDelegate, PagerTabProgressiveDelegate {
+    
+    func updateIndicator(fromIndex: Int, toIndex: Int, progressPercentage: CGFloat, indexWasChanged: Bool) {
+        <#code#>
+    }
+    
+    func updateIndicator(fromIndex: Int, toIndex: Int) {
+        <#code#>
+    }
+}
+
+extension ButtonBarPagerTabViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
+    
 }
