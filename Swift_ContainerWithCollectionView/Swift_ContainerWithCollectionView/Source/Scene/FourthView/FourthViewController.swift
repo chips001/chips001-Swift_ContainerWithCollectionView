@@ -9,6 +9,8 @@
 import UIKit
 
 class FourthViewController: UIViewController {
+    
+    var kind: PagerTabKind?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,3 +30,11 @@ class FourthViewController: UIViewController {
     */
 
 }
+
+extension FourthViewController: MainPagerTabInfoProvider {
+    var pagerTabKind: PagerTabKind {
+        guard let kind = self.kind else { fatalError() }
+        return .fourth
+    }
+}
+

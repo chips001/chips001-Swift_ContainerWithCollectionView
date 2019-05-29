@@ -9,6 +9,8 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    var kind: PagerTabKind?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,3 +30,11 @@ class SecondViewController: UIViewController {
     */
 
 }
+
+extension SecondViewController: MainPagerTabInfoProvider {
+    var pagerTabKind: PagerTabKind {
+        guard let kind = self.kind else { fatalError() }
+        return .second
+    }
+}
+

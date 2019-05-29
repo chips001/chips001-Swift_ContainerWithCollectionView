@@ -41,7 +41,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2DZ-9n-5Ax">
                                 <rect key="frame" x="0.0" y="154" width="414" height="708"/>
                                 <connections>
-                                    <segue destination="DuQ-AI-298" kind="embed" id="LuH-AZ-EZh"/>
+                                    <segue destination="DuQ-AI-298" kind="embed" identifier="pagerTabSegue" id="LuH-AZ-EZh"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -70,23 +70,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="708"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="feB-bw-B9p" customClass="ButtonBarCollectionView" customModule="Swift_ContainerWithCollectionView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="0tG-2S-LM5"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VLR-Sx-iDZ">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYe-Z8-5Pc">
-                                <rect key="frame" x="0.0" y="145" width="414" height="563"/>
-                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S41-In-lmD">
                                 <rect key="frame" x="0.0" y="43" width="414" height="102"/>
                                 <subviews>
@@ -107,6 +90,23 @@
                                     <constraint firstItem="fJM-8B-syg" firstAttribute="centerX" secondItem="S41-In-lmD" secondAttribute="centerX" id="oYH-ho-Yzb"/>
                                 </constraints>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYe-Z8-5Pc">
+                                <rect key="frame" x="0.0" y="145" width="414" height="563"/>
+                            </scrollView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="feB-bw-B9p" customClass="ButtonBarCollectionView" customModule="Swift_ContainerWithCollectionView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="0tG-2S-LM5"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VLR-Sx-iDZ">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -123,6 +123,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U1u-fU-9Pk"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonBarCollectionView" destination="feB-bw-B9p" id="CPH-Hq-kU4"/>
+                        <outlet property="containerView" destination="AYe-Z8-5Pc" id="I4F-zL-37T"/>
+                        <outlet property="userAttributeInvitationCellView" destination="S41-In-lmD" id="RlE-iQ-a2a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wza-pn-XHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

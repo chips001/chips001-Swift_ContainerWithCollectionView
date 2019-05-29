@@ -9,6 +9,8 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
+    
+    var kind: PagerTabKind?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,3 +30,11 @@ class ThirdViewController: UIViewController {
     */
 
 }
+
+extension ThirdViewController: MainPagerTabInfoProvider {
+    var pagerTabKind: PagerTabKind {
+        guard let kind = self.kind else { fatalError() }
+        return .third
+    }
+}
+

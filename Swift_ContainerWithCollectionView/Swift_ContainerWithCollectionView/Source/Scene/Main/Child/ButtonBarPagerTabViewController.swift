@@ -19,7 +19,6 @@ class ButtonBarPagerTabViewController: PagerTabViewController, PagerTabDataSourc
     var changeCurrentIndex: ((_ oldCell: ButtonBarCollectionViewCell?, _ newCell: ButtonBarCollectionViewCell?, _ animated: Bool) -> Void)?
     var changeCurrentIndexProgressive: ((_ oldCell: ButtonBarCollectionViewCell?, _ newCell: ButtonBarCollectionViewCell?, _ progressPercentage: CGFloat, _ changeCurrentIndex: Bool, _ animated: Bool) -> Void)?
 
-    
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.delegate = self
@@ -75,7 +74,7 @@ class ButtonBarPagerTabViewController: PagerTabViewController, PagerTabDataSourc
                                                bottom: sectionInset.bottom,
                                                right: self.settings.style.buttonBarRightContentInset ?? sectionInset.right)
         
-        self.buttonBarCollectionView.showsVerticalScrollIndicator = false
+        self.buttonBarCollectionView.showsHorizontalScrollIndicator = false
         self.buttonBarCollectionView.backgroundColor = self.settings.style.buttonBarBackgroundColer ?? self.buttonBarCollectionView.backgroundColor
         self.buttonBarCollectionView.selectedBarHeight = self.settings.style.selectedBarHeight
         self.buttonBarCollectionView.selectedBarRadius = self.settings.style.selectedBarRedius
@@ -253,7 +252,7 @@ extension ButtonBarPagerTabViewController: UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? ButtonBarCollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? ButtonBarCollectionViewCell else {
             fatalError("UICollectionViewCellはButtonBarCollectionViewCellであるか、それから拡張する必要があります")
         }
         

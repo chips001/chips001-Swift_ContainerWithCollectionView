@@ -15,15 +15,19 @@ struct MainPagerTabDataSource {
         var controllers: [UIViewController] = []
         
         let firstViewController = FirstViewController.instantiateFromStoryboard()
+        firstViewController.kind = .first
         controllers.append(firstViewController)
         
         let secondViewController = SecondViewController.instantiateFromStoryboard()
+        secondViewController.kind = .second
         controllers.append(secondViewController)
         
         let thirdViewController = ThirdViewController.instantiateFromStoryboard()
+        thirdViewController.kind = .third
         controllers.append(thirdViewController)
         
         let fourthViewController = FourthViewController.instantiateFromStoryboard()
+        fourthViewController.kind = .fourth
         controllers.append(fourthViewController)
         
         return controllers

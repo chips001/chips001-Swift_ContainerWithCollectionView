@@ -30,6 +30,8 @@
 		645479702263684300DAC2FC /* ButtonBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6454796E2263684300DAC2FC /* ButtonBarCollectionViewCell.swift */; };
 		645479712263684300DAC2FC /* ButtonBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6454796F2263684300DAC2FC /* ButtonBarCollectionViewCell.xib */; };
 		648DCFF222798D510006B53C /* ButtonBarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648DCFF122798D510006B53C /* ButtonBarCollectionView.swift */; };
+		648DCFF52280DBFB0006B53C /* UIFont+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648DCFF42280DBFB0006B53C /* UIFont+Util.swift */; };
+		648DCFF7228CB6760006B53C /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648DCFF6228CB6760006B53C /* UIColor+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		6454796E2263684300DAC2FC /* ButtonBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBarCollectionViewCell.swift; sourceTree = "<group>"; };
 		6454796F2263684300DAC2FC /* ButtonBarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonBarCollectionViewCell.xib; sourceTree = "<group>"; };
 		648DCFF122798D510006B53C /* ButtonBarCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBarCollectionView.swift; sourceTree = "<group>"; };
+		648DCFF42280DBFB0006B53C /* UIFont+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Util.swift"; sourceTree = "<group>"; };
+		648DCFF6228CB6760006B53C /* UIColor+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Util.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				6454796C2263623E00DAC2FC /* UIViewController+Util.swift */,
+				648DCFF42280DBFB0006B53C /* UIFont+Util.swift */,
+				648DCFF6228CB6760006B53C /* UIColor+Util.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,12 +174,10 @@
 			isa = PBXGroup;
 			children = (
 				645479882263D2C800DAC2FC /* PagerTab */,
-				644AA0AC226CAEEE008F6BE3 /* PagerTabViewController.swift */,
-				644AA0AA226CAEC3008F6BE3 /* ButtonBarPagerTabViewController.swift */,
+				648DCFF3227E70F20006B53C /* Child */,
+				644996B322667EB8006A483D /* MainPagerTabDataSource.swift */,
 				645479572263617300DAC2FC /* MainContainerViewController.swift */,
 				645479592263617300DAC2FC /* MainContainerViewController.storyboard */,
-				644AA0A8226C711E008F6BE3 /* MainPagerTabViewController.swift */,
-				644996B322667EB8006A483D /* MainPagerTabDataSource.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -188,6 +192,16 @@
 				6454796F2263684300DAC2FC /* ButtonBarCollectionViewCell.xib */,
 			);
 			path = PagerTab;
+			sourceTree = "<group>";
+		};
+		648DCFF3227E70F20006B53C /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				644AA0AC226CAEEE008F6BE3 /* PagerTabViewController.swift */,
+				644AA0AA226CAEC3008F6BE3 /* ButtonBarPagerTabViewController.swift */,
+				644AA0A8226C711E008F6BE3 /* MainPagerTabViewController.swift */,
+			);
+			path = Child;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +288,10 @@
 				644AA09E226C6A2C008F6BE3 /* FourthViewController.swift in Sources */,
 				6454796D2263623E00DAC2FC /* UIViewController+Util.swift in Sources */,
 				644AA0A9226C711E008F6BE3 /* MainPagerTabViewController.swift in Sources */,
+				648DCFF7228CB6760006B53C /* UIColor+Util.swift in Sources */,
 				644AA0AD226CAEEE008F6BE3 /* PagerTabViewController.swift in Sources */,
 				645479582263617300DAC2FC /* MainContainerViewController.swift in Sources */,
+				648DCFF52280DBFB0006B53C /* UIFont+Util.swift in Sources */,
 				648DCFF222798D510006B53C /* ButtonBarCollectionView.swift in Sources */,
 				645479562263617300DAC2FC /* AppDelegate.swift in Sources */,
 				644996B422667EB8006A483D /* MainPagerTabDataSource.swift in Sources */,
